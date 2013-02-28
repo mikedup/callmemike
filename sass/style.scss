@@ -1,0 +1,44 @@
+// Custom mixins and functions
+@mixin breakpoint($point) {
+  @if $point == smartphone {
+    @media only screen and (max-width : 767px) { @content; }
+  }
+  @if $point == tablet-portrait {
+   @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) { @content; }
+  }
+  @if $point == tablet-landscape {
+   @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape)  { @content; }
+  }
+  @else {
+   @media only screen and (max-width: $point) { @content; }
+  }
+}
+
+@mixin prefixes($property, $values) {
+	-webkit-#{$property}: $values;
+	-moz-#{$property}: $values;
+	-ms-#{$property}: $values;
+	-o-#{$property}: $values;
+	#{$property}: $values;
+}
+
+@function em($target, $context: 16px) {
+   @return #{$target / $context}em;
+}
+.container {
+	margin: 0 auto;
+	max-width: 650px;
+}
+.bigtext {
+	font-family: "Open Sans", Helvetica, sans-serif;
+	text-transform: uppercase;
+	h1, h2 {	
+		font-weight: 300;
+		line-height: 1em;
+		margin: 0;
+		padding: 0;
+	}
+}
+#billboard {
+	
+}

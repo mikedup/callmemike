@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Call Me Mike</title>
+
+	<link rel="stylesheet" href="/stylesheets/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+	<div id="billboard">
+		<div id="bigtext" class="container">
+			<h1>I am <strong>Mike Davis</strong></h1>
+			<h2>Christian <i>&</i> Husband</h2>
+			<h2>UI Developer</h2>
+			<h2>Cyclist & Brave</h2>
+		</div>
+	</div>
+	<div id="main-container" class="container">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ 	<script src="/javascripts/bigtext.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#bigtext').bigtext({
+				childSelector: '> h1, > h2'
+			});
+		});
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* line 28, ../sass/style.scss */
+.container {
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+/* line 32, ../sass/style.scss */
+.bigtext {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+/* line 35, ../sass/style.scss */
+.bigtext h1, .bigtext h2 {
+  font-weight: 300;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
