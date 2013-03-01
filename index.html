@@ -39,12 +39,22 @@
 	</footer>
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
  	<script src="/javascripts/bigtext.js"></script>
 	<script>
 		$(document).ready(function() {
-			$('#bigtext').bigtext({
-				childSelector: '> h1, > h2'
-			});
+			 WebFont.load({
+		        custom: {
+		            families: ['karbonlight, karbonregular'], // font-family name
+		            urls : ['/stylesheets/style.css'] // URL to css
+		        },
+		        active: function() {
+		           $('#bigtext').bigtext({
+						childSelector: '> h1, > h2'
+				   });
+				}
+		    });
+			
 		});
 	</script>
 	
