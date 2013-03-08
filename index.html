@@ -5,7 +5,7 @@
 	<title>Call Me Mike</title>
 
 	<link rel="stylesheet" href="/stylesheets/style.css" />
-
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Londrina+Outline|Londrina+Solid' rel='stylesheet' type='text/css'>
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
@@ -42,20 +42,16 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
  	<script src="/javascripts/bigtext.js"></script>
 	<script>
-		$(document).ready(function() {
-			 WebFont.load({
-		        custom: {
-		            families: ['karbonlight, karbonregular'], // font-family name
-		            urls : ['/stylesheets/style.css'] // URL to css
-		        },
-		        active: function() {
-		           $('#bigtext').bigtext({
-						childSelector: '> h1, > h2'
-				   });
-				}
-		    });
-			
-		});
+		WebFont.load({
+		    google: {
+		      families: ['Londrina Outline', 'Londrina Solid']
+		    },
+	        active: function() {
+	           $('#bigtext').bigtext({
+					childSelector: '> h1, > h2'
+			   });
+			}
+	    });
 	</script>
 	
 </body>
