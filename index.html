@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Call Me Mike</title>
+	<title>Mike Davis</title>
 
+  <link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="stylesheets/style.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Londrina+Outline|Londrina+Solid' rel='stylesheet' type='text/css'>
+
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
 <body>
-	<div id="billboard">
-		<div id="bigtext" class="container">
+	<div class="billboard">
+		<div class="bigtext container">
 			<h1>I'm <strong>Mike Davis</strong></h1>
 			<h2>UI Designer</h2>
 			<h2>Husband Father Christian</h2>
 		</div>
 	</div>
-	<div id="main-container" class="container">
-		<div id="social" class="group">
+	<div class="main-container container">
+		<div class="social group">
 			<ul>
 				<li><a href="http://dribbble.com/mikedavis" class="dribbble hide-text">Dribbble</a><span>Dribbble</span></li>
 				<li><a href="mailto:mikedavis@smartmediacreative.com" class="email hide-text">Email</a><span>Email</span></li>
@@ -31,7 +33,74 @@
 				<li><a href="http://www.rdio.com/people/MikeDavis/" class="rdio hide-text">Rdio</a><span>Rdio</span></li>
 			</ul>
 		</div>
-		<p>My name is Mike. I'm a designer and front-end web developer at <a href="http://www.mobiquityinc.com">Mobiquity</a>. I live in Gainesville, FL with my <em>beautiful</em> wife, Liz, our infant son, Asher, our two dogs, Skyler and Rylan, and our two cats, Embry and Sulley. I love designing simple, usable interfaces. I use HTML, SCSS and JavaScript to build websites and apps that emphasize content in usable and visually striking ways on any device. I'm also a designer at <a href="http://broker.is">Broker</a> and <a href="http://www.humanitybox.com">Humanity Box</a>.</p>
+
+		<div class="tabs">
+  	  <ul class="tabs__nav group">
+  	    <li><a href="#about">About me</a></li>
+  	    <li><a href="#work">Work samples</a></li>
+  	  </ul>
+  	  <div id="about">
+  	    <p>Hi, I'm Mike. I'm a designer and front-end web developer at <a href="http://www.mobiquityinc.com">Mobiquity</a>. I live in Gainesville, FL with my <em>beautiful</em> wife, Liz, our infant son, Asher, our two dogs, Skyler and Rylan, and our two cats, Embry and Sulley. I love designing simple, usable interfaces. I use HTML, SCSS and JavaScript to build websites and apps that emphasize content in usable and visually striking ways on any device. I'm also the UI designer at <a href="http://broker.is">Broker</a> and <a href="http://www.humanitybox.com">Humanity Box</a>.</p>
+  	  </div>
+  	  <div id="work">
+        <p>Just a few of the projects I've had the opportunity to work on:</p>
+        <div class="work__item">
+          <h3>Broker</h3>
+          <a href="http//broker.is"><i class="fa fa-globe"></i> broker.is</a>
+          <p>Site design, UI, presentational code</p>
+          <a class="popup" href="images/screen_broker.jpg">
+    	     <img class="popup" src="images/screen_broker.jpg">
+          </a>
+        </div>
+        <div class="work__item">
+          <h3>Pixelbots</h3>
+          <a href="http://thepixelbots.com">thepixelbots.com</a>
+          <p>Site design, identity, presentational code</p>
+          <a class="popup" href="images/screen_pxb.jpg">
+            <img class="popup"src="images/screen_pxb.jpg">
+          </a>
+        </div>
+        <div class="work__item">
+          <h3>StoneVault</h3>
+          <p>UI</p>
+          <a class="popup" href="images/screen_sv.jpg">
+            <img class="popup" src="images/screen_sv.jpg">
+          </a>
+        </div>
+        <div class="work__item">
+          <h3>Collabmatch</h3>
+          <a href="http://collabmatch.org"><i class="fa fa-globe"></i> collamatch.org</a>
+          <p>Site design, identity, presentational code</p>
+          <a class="popup" href="images/screen_collabmatch.jpg">
+            <img src="images/screen_collabmatch.jpg">
+          </a>
+        </div>
+        <div class="work__item">
+          <h3>Payday</h3>
+          <p>UI</p>
+          <a class="popup" href="images/screen_payday.jpg">
+            <img src="images/screen_payday.jpg">
+          </a>
+        </div>
+        <div class="work__item">
+          <h3>Humanity Box</h3>
+          <a href="http://humanitybox.com"><i class="fa fa-globe"></i> humanitybox.com</a>
+          <p>Site design, identity, presentational code</p>
+          <a class="popup" href="images/screen_humanitybox.jpg">
+            <img src="images/screen_humanitybox.jpg">
+          </a>
+        </div>
+        <div class="work__item">
+          <h3>For Journalism</h3>
+          <a href="http://forjournalism.com"><i class="fa fa-globe"></i> forjournalism.com</a>
+          <p>Site design, identity, presentational code</p>
+          <a class="popup" href="images/screen_fj.jpg">
+            <img src="images/screen_fj.jpg">
+          </a>
+        </div>
+        
+  	  </div>
+    </div>
 	</div>
 	
 	<footer class="container">
@@ -41,17 +110,43 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
  	<script src="js/bigtext.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
 	<script>
 		WebFont.load({
-		    google: {
-		      families: ['Londrina Outline', 'Londrina Solid']
-		    },
-	        active: function() {
-	           $('#bigtext').bigtext({
-					childSelector: '> h1, > h2'
-			   });
-			}
-	    });
+	    google: {
+	      families: ['Londrina Outline', 'Londrina Solid']
+	    },
+        active: function() {
+           $('.bigtext').bigtext({
+				childSelector: '> h1, > h2'
+		   });
+		}
+    });
+
+    $(document).ready(function() {
+      $('.popup').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        mainClass: 'mfp-img-mobile',
+        image: {
+          verticalFit: false
+        }
+        
+      });
+
+      $(function () {
+        var tabContainers = $('.tabs > div');
+        
+        $('.tabs__nav a').click(function () {
+            tabContainers.hide().filter(this.hash).show();
+            
+            $('.tabs__nav li').removeClass('selected');
+            $(this).parent('li').addClass('selected');
+            
+            return false;
+        }).filter(':first').click();
+      });
+    });
 	</script>
 	
 </body>
