@@ -40,10 +40,12 @@ div, ul, li, img {
 	box-sizing: border-box;
 }
 a:link, a:visited {
-	color: #7d2018;
+	color: #03A89E;
+	text-decoration: none;
+	border-bottom: 2px dotted #03A89E;
 }
 a:hover, a:active {
-	color: lighten(#7d2018, 15);
+	color: lighten(#03A89E, 7);
 }
 .group:after {
 	visibility: hidden;
@@ -58,7 +60,7 @@ a:hover, a:active {
 	overflow: hidden;
 }
 .bigtext {
-	font-family: 'Londrina Outline', cursive;
+	font-family: "Londrina Outline", cursive;
 	text-transform: uppercase;
 	h1, h2 {	
 		color: #fff;
@@ -67,7 +69,7 @@ a:hover, a:active {
 		margin: 0;
 		padding: 0;
 		strong {
-			font-family: 'Londrina Solid', cursive;
+			font-family: "Londrina Solid", cursive;
 		}
 		i {
 			font-size: .65em;
@@ -78,11 +80,14 @@ a:hover, a:active {
 			margin: 0;
 		}
 	}
+	h2:last-child {
+		margin-top: 0.25em;
+	}
 }
 #billboard {
 	background: url(/images/bg_billboard.jpg) center center no-repeat;
 	background-size: cover;
-	padding: 50px 0 75px 0;
+	padding: 50px 0 95px 0;
 	h2:last-child {
 		line-height: .65em;
 	}
@@ -121,6 +126,7 @@ a:hover, a:active {
 				width: 100%;
 			}
 			a {
+				border: none;
 				display: block;
 				min-height: 56px;
 				opacity: .9;
