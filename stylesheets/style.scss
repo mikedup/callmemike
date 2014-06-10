@@ -84,7 +84,7 @@ a:hover, a:active {
 		margin-top: 0.25em;
 	}
 }
-#billboard {
+.billboard {
 	background: url(../images/bg_billboard.jpg) center center no-repeat;
 	background-size: cover;
 	padding: 50px 0 95px 0;
@@ -92,16 +92,20 @@ a:hover, a:active {
 		line-height: .65em;
 	}
 }
-#main-container {
+.main-container {
 	p {
 		color: #333;
 		font-size: em(24px);
 		line-height: 1.65em;
-		//text-align: center;
+		
+    @media only screen and (max-width: 480px) {
+      font-size: em(21px);
+    }
 	}
 }
-#social {
+.social {
 	padding-bottom: 15px;
+  position: relative;
 	ul {
 		float: left;
 		margin: 25px 0 0 0;
@@ -176,18 +180,139 @@ a:hover, a:active {
 		width: 33%;
 		z-index: 2;
 	}
+
+  @media only screen and (max-width: 480px) {
+    ul {
+      clear: left;
+      width: 100%;
+      li {
+        text-align: center;
+        a {
+          background-position: center;
+          background-size: 55px !important;
+          display: block;
+          margin: 0;
+        }
+      }
+
+      &:first-child {
+        margin-top: 6em;
+      }
+    }
+    img {
+      left: 50%;
+      margin: 0 0 0 -15%;
+      max-width: 125px;
+      position: absolute;
+      top: -50px;
+    }
+  }
 }
+.tabs {
+}
+.tabs__nav {
+  border-bottom: 2px solid #dfdfdf;
+  margin: 2em 0 3em 0;
+  padding: 0;
+  li {
+  	box-sizing: border-box;
+    float: left;
+    font-size: em(21px);
+    list-style-type: none;
+    margin: 0 0 -2px 0;
+    text-align: center;
+  	width: 50%;
+    a {
+      border: none;
+      color: #ccc;
+      display: block;
+      padding: 0.75em;
+      text-transform: uppercase;
+
+      &:hover {
+
+      }
+    }
+
+    &.selected {
+      background-color: #fff;
+      border-bottom: 2px solid #03A89E;
+      a { 
+        color: #03A89E;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    li {
+      font-size: em(16px);
+    }
+  }
+}
+
+#work {
+  &> p {
+    padding-bottom: 1em;
+    text-align: center;
+  }
+}
+
+.work__item {
+  border-top: 1px solid #ddd;
+  margin-top: 2em;
+  padding: 2.5em 0 5em 0;
+  text-align: center;
+  h3 {
+    font-size: em(40px);
+    margin: {
+      top: 0;
+      bottom: 0;
+    }
+
+    &+ a {
+      border: none;
+      font-size: em(18px);
+    }
+  }
+
+  p {
+    color: #aaa;
+    font-size: em(18px);
+    margin-top: 1.5em;
+  }
+
+  a {
+    border: none;
+  }
+
+  img {
+    box-shadow: 0 0 15px rgba(200,200,200, 0.35);
+    margin-top: 1.5em;
+    max-width: 100%;
+  }
+
+  &:first-child {
+    border-top: 0;
+    padding-top: 0.5em;
+  }
+}
+
+// Modals
+@import "magnific.css";
+.mfp-content {
+  max-width: 80%;
+}
+
 footer.container {
 	padding-top: 50px;
 	p {
 		background: url(../images/dogs.png) center top no-repeat;
-		background-size: 50%;
+		background-size: 65px;
 		font-family: "Open Sans", Helvetica, sans-serif;
 		margin: 0 auto;
-		padding: 80px 0 10px 0;
+		padding: 55px 0 20px 0;
 		text-align: center;
 		text-transform: uppercase;
-		width: 25%;
 		span {
 		//	background: #7d2018;
 			color: #333;
