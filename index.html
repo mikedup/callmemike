@@ -45,6 +45,17 @@
   	  </div>
   	  <div id="work">
         <p>Just a few of the projects I've had the opportunity to work on:</p>
+				<div class="work__item">
+					<h3>Siftie</h3>
+					<a href="http://siftie.com"><i class="fa fa-globe"></i> siftie.com</a>
+					<p>UI, identity, presentational code</p>
+					<a class="popup" href="images/screen_siftie.jpg">
+						<img class="popup"src="images/screen_siftie.jpg">
+					</a>
+					<a class="popup" href="images/siftie.gif">
+						<img class="popup"src="images/siftie.gif">
+					</a>
+				</div>
         <div class="work__item">
           <h3>Showroom</h3>
           <a href="http://showroom.is"><i class="fa fa-globe"></i> showroom.is</a>
@@ -52,6 +63,9 @@
            <a class="popup" href="images/screen_showroom_2.jpg">
             <img class="popup"src="images/screen_showroom_2.jpg">
           </a>
+					<a class="popup" href="images/screen_showroom_3.jpg">
+						<img class="popup"src="images/screen_showroom_3.jpg">
+					</a>
           <a class="popup" href="images/screen_showroom.jpg">
             <img class="popup"src="images/screen_showroom.jpg">
           </a>
@@ -110,15 +124,15 @@
             <img src="images/screen_fj.jpg">
           </a>
         </div>
-        
+
   	  </div>
     </div>
 	</div>
-	
+
 	<footer class="container">
 		<p><span>©2015 Mike Davis</span></p>
 	</footer>
-	
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
  	<script src="js/bigtext.js"></script>
@@ -143,23 +157,23 @@
         image: {
           verticalFit: false
         }
-        
+
       });
 
       $(function () {
         var tabContainers = $('.tabs > div');
-        
+
         $('.tabs__nav a').click(function () {
             tabContainers.hide().filter(this.hash).show();
-            
+
             $('.tabs__nav li').removeClass('selected');
             $(this).parent('li').addClass('selected');
-            
+
             return false;
         }).filter(':first').click();
       });
     });
 	</script>
-	
+
 </body>
 </html>
